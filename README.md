@@ -1,2 +1,2 @@
-# digital-resume
-Digital resume for Francois Botha
+# digital-cv
+Digital CV for Francois Botha
