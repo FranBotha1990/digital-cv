@@ -1,6 +1,26 @@
 <template>
+    <!-- Screen container, page-level -->
     <div>
-        <h1>Hello world!</h1>
+        <!-- Content container -->
+        <div>
+            <!-- CV container -->
+            <div>
+                <!-- Flex container for the columns -->
+                <div>
+                    <!-- Left column container -->
+                    <div>
+
+                    </div>
+
+                    <!-- Right column container -->
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
     </div>
 </template>
 
@@ -8,6 +28,6 @@
 
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
