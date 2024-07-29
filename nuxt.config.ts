@@ -9,4 +9,19 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  app: {
+    head: {
+      title: 'Francois Botha | Digital CV',
+      meta: [
+        {
+          name: 'description', content: 'Virtual Profile & CV for Francois Botha'
+        }
+      ],
+      link: [
+        {
+          rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
+        }
+      ]
+    }
+  }
 })
