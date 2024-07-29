@@ -15,15 +15,15 @@
 }
 
 .main-column-cnt {
-    @apply flex
+    @apply flex flex-col md:flex-row
 }
 
 .left-column-cnt {
-    @apply w-1/3 p-6 bg-gray-50
+    @apply w-full md:w-1/3 p-6 bg-gray-50
 }
 
 .right-column-cnt {
-    @apply w-2/3 p-6
+    @apply w-full md:w-2/3 p-6
 }
 
 .profile-pic {
