@@ -2,3 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+.screen-cnt {
+    @apply min-h-screen bg-gray-400 px-8 py-4 sm:px-6 lg:px-8
+}
+
+.content-cnt {
+    @apply max-w-7xl mx-auto
+}
+
+.cv-cnt {
+    @apply bg-white shadow-md overflow-hidden rounded-lg
+}
+
+.main-column-cnt {
+    @apply flex
+}
+
+.left-column-cnt {
+    @apply w-1/3 p-6 bg-gray-50
+}
+
+.right-column-cnt {
+    @apply w-2/3 p-6
+}
+
+.profile-pic {
+    @apply w-auto h-auto rounded-full
+}
+
+h1 {
+    @apply text-2xl font-bold
+}
+
+h2 {
+    @apply text-xl font-bold
+}
+
+h3 {
+    @apply text-lg
+}
