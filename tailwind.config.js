@@ -10,6 +10,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // Extend available colors
       colors: {
         'custcol-indigodye': '#044b7f',
         'custcol-teal': '#107e7d',
@@ -17,6 +18,10 @@ module.exports = {
         'custcol-midnightgreen': '#19535f',
         'custcol-skobeloff': '0b7a75',
       },
+      // Create custom background with gradient
+      backgroundImage: theme => ({
+        'cust-gradient': 'linear-gradient(100deg, #044b7f 0%, #107e7d 50%, #19535f 100%)',
+      }),
     },
   },
   plugins: [],
