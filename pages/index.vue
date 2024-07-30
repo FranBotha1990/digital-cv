@@ -33,28 +33,29 @@
                         <!-- Strengths section -->
                         <section class="mb-4">
                             <h3>Strengths</h3>
-                            <ul>
-                                <li>Good Communicator</li>
-                                <li>Strategic Leader</li>
-                                <li>Analytical</li>
-                                <li>Insightful</li>
-                                <li>Resilient</li>
-                                <li>Innovative</li>
-                                <li>Self-Aware</li>
-                                <li>Creative</li>
-                                <li>Adaptable</li>
+                            <ul class="flex flex-wrap gap-1 justify-center">
+                                <li class="ml-1 strengthItems">Good Communicator</li>
+                                <li class="strengthItems">Strategic Leader</li>
+                                <li class="strengthItems">Analytical</li>
+                                <li class="strengthItems">Insightful</li>
+                                <li class="strengthItems">Resilient</li>
+                                <li class="strengthItems">Innovative</li>
+                                <li class="strengthItems">Self-Aware</li>
+                                <li class="strengthItems">Creative</li>
+                                <li class="strengthItems">Adaptable</li>
+                                <li class="strengthItems">Confident</li>
                             </ul>
                         </section>
                         
                         <!-- Skills section -->
                         <section class="mb-4">
                             <h3>Skills</h3>
-                            <ul>
-                                <li>One</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                                <li>Four</li>
-                                <li>Five</li>
+                            <ul class="flex flex-wrap gap-1 justify-center">
+                                <li class="ml-1 skillItems">One</li>
+                                <li class="skillItems">Two</li>
+                                <li class="skillItems">Three</li>
+                                <li class="skillItems">Four</li>
+                                <li class="skillItems">Five</li>
                             </ul>
                         </section>
                     

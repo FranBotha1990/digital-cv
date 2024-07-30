@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .screen-cnt {
-    @apply min-h-screen bg-gray-400 px-8 py-4 sm:px-6 lg:px-8
+    @apply min-h-screen bg-gray-300 px-8 py-4 sm:px-6 lg:px-8
 }
 
 .content-cnt {
@@ -11,7 +11,7 @@
 }
 
 .cv-cnt {
-    @apply bg-white shadow-md overflow-hidden rounded-lg
+    @apply bg-white shadow-lg overflow-hidden rounded-lg
 }
 
 .main-column-cnt {
@@ -40,4 +40,12 @@ h2 {
 
 h3 {
     @apply text-lg
+}
+
+.strengthItems {
+    @apply bg-custcol-indigodye text-white rounded-full px-2 py-1 text-sm
+}
+
+.skillItems {
+    @apply bg-custcol-teal text-white rounded-full px-2 py-1 text-sm
 }
