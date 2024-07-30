@@ -34,7 +34,7 @@
                         <section class="mb-4">
                             <h3>Strengths</h3>
                             <ul class="flex flex-wrap gap-1 justify-center">
-                                <li v-for="(item, index) in strengths" key="index" class="strengthItems">{{ item }}</li>
+                                <li v-for="(strength, index) in strengths" key="index" class="strengthItems">{{ strength }}</li>
                             </ul>
                         </section>
                         
@@ -42,7 +42,7 @@
                         <section class="mb-4">
                             <h3>Skills</h3>
                             <ul class="flex flex-wrap gap-1 justify-center">
-                                <li v-for="(item, index) in skills" key="index" class="skillItems">{{ item }}</li>
+                                <li v-for="(skill, index) in skills" key="index" class="skillItems">{{ skill }}</li>
                             </ul>
                         </section>
                     
