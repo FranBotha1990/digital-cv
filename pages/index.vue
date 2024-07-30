@@ -34,16 +34,7 @@
                         <section class="mb-4">
                             <h3>Strengths</h3>
                             <ul class="flex flex-wrap gap-1 justify-center">
-                                <li class="ml-1 strengthItems">Good Communicator</li>
-                                <li class="strengthItems">Strategic Leader</li>
-                                <li class="strengthItems">Analytical</li>
-                                <li class="strengthItems">Insightful</li>
-                                <li class="strengthItems">Resilient</li>
-                                <li class="strengthItems">Innovative</li>
-                                <li class="strengthItems">Self-Aware</li>
-                                <li class="strengthItems">Creative</li>
-                                <li class="strengthItems">Adaptable</li>
-                                <li class="strengthItems">Confident</li>
+                                <li v-for="(item, index) in strengths" key="index" class="strengthItems">{{ item }}</li>
                             </ul>
                         </section>
                         
@@ -51,11 +42,7 @@
                         <section class="mb-4">
                             <h3>Skills</h3>
                             <ul class="flex flex-wrap gap-1 justify-center">
-                                <li class="ml-1 skillItems">One</li>
-                                <li class="skillItems">Two</li>
-                                <li class="skillItems">Three</li>
-                                <li class="skillItems">Four</li>
-                                <li class="skillItems">Five</li>
+                                <li v-for="(item, index) in skills" key="index" class="skillItems">{{ item }}</li>
                             </ul>
                         </section>
                     
@@ -64,13 +51,7 @@
                     <!-- Right column -->
                     <section class="right-column-cnt">
 
-                        <!-- Professional titles -->
-                        <section class="mb-4">
-                            <h3>IT Projects | Operations | Support Services | System Administration | Software Validation</h3>
-                        </section>
-
-                        <!-- Profile summary -->
-                        <section class="mb-4">Seasoned IT professional with over a decade of experience in IT management, technical engineering, and team leadership. I excel at aligning IT strategies with business goals, driving innovation, and ensuring operational excellence. My expertise includes managing complex enterprise environments, maintaining compliance with industry standards, and optimizing system performance. I have a proven track record of leading cross-functional teams, providing comprehensive support, and implementing effective migrations and rollouts. I am skilled in cost-efficient IT operations, risk management, and integrating advanced technologies. My focus is on delivering client-centered solutions, enhancing service delivery, and maintaining robust IT infrastructures across various industries.</section>
+                        <Summary></Summary>
                         
                         <!-- Work experience container -->
                         <div class="mb-4">
@@ -182,6 +163,16 @@
 
     // Get current year
     const currentYear = ref(new Date().getFullYear())
+
+    // Skills list
+    const skills = ref([
+        'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'
+    ])
+
+    // Strengths list
+    const strengths = ref([
+        'Good Communicator', 'Strategic Leader', 'Analytical', 'Insightful', 'Resilient', 'Innovative', 'Self-Aware', 'Creative', 'Adaptable', 'Confident'
+    ])
 
 </script>
 
