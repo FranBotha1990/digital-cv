@@ -18,15 +18,27 @@
 
                         <!-- Contact information  -->
                         <section class="mb-4">
-                            <h1>Francois Botha</h1>
-                            <h2>Head of Business Information</h2>
-                            <h3>Contact Information</h3>
+                            <h1 class="pb-2">Francois Botha</h1>
+                            <h2 class="pb-2">Head of Business Information</h2>
                             <ul>
-                                <li><a href="">Turku, Finland</a></li>
-                                <li><a href="">f.botha@outlook.com</a></li>
-                                <li><a href="">LinkedIn</a></li>
-                                <li><a href="">Digital CV</a></li>
-                                <li><a href="">GitHub</a></li>
+                                <li class="flex">
+                                    <IconsLocationIcon class="pr-1"/>
+                                    <a href="https://en.visitturku.fi/" target="blank">Turku, Finland</a>
+                                </li>
+                                <li class="flex">
+                                    <IconsEmailIcon class="pr-1"/>
+                                    <a href="mailto:f.botha@outlook.com">f.botha@outlook.com</a>
+                                </li>
+                                <li class="flex">
+                                    <IconsLinkedInIcon class="pr-1"/>
+                                    <a href="https://www.linkedin.com/in/francois-botha-4038b116b/" target="blank">LinkedIn</a></li>
+                                <li class="flex">
+                                    <IconsWebsiteIcon class="pr-1"/>
+                                    <a href="https://franbotha1990.github.io/digital-cv/" target="blank">Digital CV</a></li>
+                                <li class="flex">
+                                    <IconsGitHubIcon class="pr-1"/>
+                                    <a href="https://github.com/FranBotha1990" target="blank">GitHub</a>
+                                </li>
                             </ul>
                         </section>
                         
@@ -56,7 +68,7 @@
                         
                         <!-- Work experience container -->
                         <div class="mb-4">
-                            <h2 class="mb-6">Experience</h2>
+                            <h2 class="mb-4 text-2xl">Experience</h2>
                             <section>
                                 <Job
                                     v-for="job in jobs" 
@@ -69,7 +81,6 @@
                                     :responsibilities="job.responsibilities"
                                 />
                             </section>
-                        
                         </div>
                         
                         <!-- Education section -->
@@ -83,9 +94,9 @@
                 </div>
 
                 <!-- Footer information -->
-                <footer>
+                <footer class="footer-cnt">
                     <div>
-                        <p class="text-center">&copy; Francois Botha {{ currentYear }} </p>
+                        <p class="text-center font-bold">&copy; Francois Botha {{ currentYear }} </p>
                     </div>
                 </footer>
 
@@ -95,7 +106,7 @@
 </template>
 
 <script setup>
-
+    
     // Get current year
     const currentYear = ref(new Date().getFullYear())
 

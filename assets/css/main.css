@@ -30,6 +30,10 @@
     @apply w-auto h-auto rounded-full
 }
 
+.footer-cnt {
+    @apply bg-custcol-indigodye text-white pt-2 pb-2
+}
+
 h1 {
     @apply text-2xl font-bold
 }
@@ -48,4 +52,8 @@ h3 {
 
 .skillItems {
     @apply bg-custcol-teal text-white rounded-full px-2 py-1 text-sm
+}
+
+.responsibility-title {
+    font-weight: 600;
 }

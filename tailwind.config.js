@@ -20,7 +20,7 @@ module.exports = {
       },
       // Create custom background with gradient
       backgroundImage: theme => ({
-        'cust-gradient': 'linear-gradient(100deg, #044b7f 0%, #107e7d 50%, #19535f 100%)',
+        'cust-gradient': 'linear-gradient(120deg, #044b7f 0%, #107e7d 50%, #19535f 100%)',
       }),
     },
   },

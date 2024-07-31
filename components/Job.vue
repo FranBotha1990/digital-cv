@@ -3,14 +3,14 @@
     <!-- Job history component -->
     <section class="mb-6">
         <h2 class="mb-2">{{ title }}</h2>
-        <div class="flex justify-between font-semibold text-sm">
+        <div class="flex justify-between font-semibold text-md">
             <p>{{ company }}</p>
             <p>{{ dateRange }}</p>
-            <p>{{ location }}</p>
         </div>
-        <p class="italic pt-2 pb-2">{{ companyDescription }}</p>
+        <p class="flex italic text-sm pt-1 pb-2"><IconsLocationIcon />{{ location }}</p>
+        <p class="italic pb-2">{{ companyDescription }}</p>
         <ul class="list-disc pl-6">
-            <li v-for="(responsibility, index) in responsibilities" key="index">{{ responsibility }}</li>
+            <li v-for="(responsibility, index) in responsibilities" key="index" v-html="formatResponsibility(responsibility)"></li>
         </ul>
     </section>
 
@@ -39,6 +39,13 @@
             type: Array,
         }
     })
+
+    // Format responsibilities so titles are somewhat darker
+    const formatResponsibility = (text) => {
+        const [respTitle, respDescription] = text.split(':');
+
+        return `<span class="responsibility-title">${respTitle}</span>: ${respDescription ? respDescription : ''}`;
+    };
 
 </script>
 

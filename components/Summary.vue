@@ -2,7 +2,7 @@
   <div>
 
     <!-- Professional titles -->
-    <section class="mb-4">
+    <section class="mb-4 text-custcol-indigodye font-semibold text-center">
         <h3>IT Projects | Operations | Support Services | System Administration | Software Validation</h3>
     </section>
 
