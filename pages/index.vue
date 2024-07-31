@@ -13,7 +13,7 @@
 
                         <!-- Profile picture -->
                         <header class="flex justify-center mb-6">
-                            <img src="/assets/img/profile.png" alt="Francois Botha" class="profile-pic">
+                            <img src="~/assets/img/profile.png" alt="Francois Botha" class="profile-pic">
                         </header>
 
                         <!-- Contact information  -->
