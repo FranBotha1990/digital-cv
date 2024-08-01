@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .screen-cnt {
-    @apply min-h-screen bg-cust-gradient px-8 py-4 sm:px-6 lg:px-8
+    @apply min-h-screen bg-cust-gradient px-4 py-4 sm:px-6 lg:px-8
 }
 
 .content-cnt {

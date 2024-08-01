@@ -3,11 +3,11 @@
     <!-- Job history component -->
     <section class="mb-6">
         <h2 class="mb-2">{{ title }}</h2>
-        <div class="flex justify-between font-semibold text-md">
+        <div class="flex justify-between font-semibold text-sm text-custcol-indigodye">
             <p>{{ company }}</p>
             <p>{{ dateRange }}</p>
         </div>
-        <p class="flex italic text-sm pt-1 pb-2"><IconsLocationIcon />{{ location }}</p>
+        <p class="flex italic text-sm pt-1 pb-2 text-custcol-teal"><IconsLocationIcon />{{ location }}</p>
         <p class="italic pb-2">{{ companyDescription }}</p>
         <ul class="list-disc pl-6">
             <li v-for="(responsibility, index) in responsibilities" key="index" v-html="formatResponsibility(responsibility)"></li>
