@@ -11,7 +11,7 @@
 }
 
 .cv-cnt {
-    @apply bg-white shadow-lg overflow-hidden rounded-lg
+    @apply bg-white shadow-xl overflow-hidden rounded-lg
 }
 
 .main-column-cnt {
@@ -19,7 +19,7 @@
 }
 
 .left-column-cnt {
-    @apply w-full md:w-1/3 bg-gray-50 md:p-6 p-4
+    @apply w-full md:w-1/3 bg-gray-100 md:p-6 p-4
 }
 
 .right-column-cnt {
@@ -27,7 +27,7 @@
 }
 
 .profile-pic {
-    @apply w-auto h-auto rounded-full
+    @apply w-auto h-auto rounded-full border-4 border-custcol-indigodye
 }
 
 .footer-cnt {
@@ -60,4 +60,12 @@ h3 {
 
 .responsibility-title {
     font-weight: 600;
+}
+
+.buttons {
+    @apply p-2 mb-2 bg-white rounded-full md:w-24 w-20 md:text-lg text-sm text-center mx-1 shadow-xl transition duration-500 ease-in-out font-semibold
+}
+
+.buttons:hover {
+    @apply bg-custcol-teal text-white
 }
