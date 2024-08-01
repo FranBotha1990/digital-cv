@@ -165,11 +165,15 @@ h3 {
 }
 
 .certificates {
-    @apply px-4 py-6 max-w-4xl mx-auto;
+    @apply px-4 py-6 md:max-w-7xl max-w-4xl mx-auto;
 }
   
 .certificate-item {
-    @apply mb-6 p-4 border bg-white rounded-md shadow-xl;
+    @apply p-4 border bg-white rounded-md shadow-xl max-w-sm;
+}
+
+.certificates h1 {
+    @apply flex justify-center font-bold mb-4 text-custcol-teal text-3xl bg-white rounded-full p-2 w-60 mx-auto
 }
   
 .certificate-item h2 {
@@ -177,11 +181,15 @@ h3 {
 }
   
 .image-container {
-    @apply mt-4
+    @apply mt-4;
 }
   
 .certificate-image {
     max-width: 100%;
     height: auto;
     border: 1px solid #107e7d;
+}
+
+.education-cnt {
+    @apply bg-white rounded-md max-w-xl mb-4 p-4 mx-auto justify-center text-left
 }
