@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 .screen-cnt {
-    @apply min-h-screen bg-cust-gradient px-4 py-4 sm:px-6 lg:px-8
+    @apply min-h-screen bg-cust-gradient p-4 sm:px-6 lg:px-8 relative overflow-hidden;
+}
+
+.overlay-cnt {
+    @apply absolute inset-0 pointer-events-none;
+}
+
+.overlay-image {
+    @apply fixed inset-0 bg-[url('/assets/img/overlay.png')] bg-no-repeat bg-center bg-cover opacity-10;
 }
 
 .content-cnt {
-    @apply max-w-7xl mx-auto
+    @apply max-w-7xl mx-auto relative z-10;
 }
 
 .cv-cnt {
@@ -63,7 +71,7 @@ h3 {
 }
 
 .buttons {
-    @apply p-2 mb-2 bg-white rounded-full md:w-24 w-20 md:text-lg text-sm text-center mx-1 shadow-xl transition duration-500 ease-in-out font-semibold
+    @apply p-2 mb-2 bg-white rounded-full md:w-24 w-20 md:text-lg text-sm text-center mx-0.5 shadow-xl transition duration-500 ease-in-out font-semibold
 }
 
 .buttons:hover {
@@ -76,10 +84,82 @@ h3 {
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 1s ease, transform 1s ease;
+    transition: opacity 0.5s, transform 0.5s;
 }
 .page-enter-from,
 .page-leave-to {
-  opacity: 0;
-  transform: translateX(-100px);
+    opacity: 0;
+    transform: translateX(-80px);
+}
+
+@keyframes home-pop {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes button-drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.drop-down {
+    opacity: 0;
+    animation: button-drop 1s forwards;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: home-pop 2s ease-out forwards;
+}
+
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-100 {
+    animation-delay: 0.5s;
+}
+
+.delay-200 {
+    animation-delay: 1.5s;
+}
+
+.delay-300 {
+    animation-delay: 2s;
+}
+
+.delay-400 {
+    animation-delay: 3s;
+}
+
+.delay-500 {
+    animation-delay: 4s;
+}
+
+.delay-600 {
+    animation-delay: 4.5s;
+}
+
+.delay-700 {
+    animation-delay: 5s;
+}
+
+.delay-800 {
+    animation-delay: 5.5s;
 }

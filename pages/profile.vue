@@ -1,112 +1,113 @@
 <template>
-    <!-- CV container -->
-    <article class="cv-cnt">
-        <!-- Column flex container for the -->
-        <div class="main-column-cnt">
+    <div>
+        
+        <!-- CV container -->
+        <article class="cv-cnt">
+            <!-- Column flex container for the -->
+            <div class="main-column-cnt">
 
-            <!-- Left column -->
-            <aside class="left-column-cnt sticky">
+                <!-- Left column -->
+                <aside class="left-column-cnt sticky">
 
-                <!-- Profile picture -->
-                <header class="flex justify-center mb-6">
-                    <img src="/assets/img/profile.png" alt="Francois Botha" class="profile-pic">
-                </header>
+                    <!-- Profile picture -->
+                    <header class="flex justify-center mb-6">
+                        <img src="/assets/img/profile.png" alt="Francois Botha" class="profile-pic">
+                    </header>
 
-                <!-- Contact information  -->
-                <section class="mb-4">
-                    <h1 class="pb-2">Francois Botha</h1>
-                    <h2 class="pb-2">Head of Business Information</h2>
-                    <ul>
-                        <li class="flex">
-                            <IconsLocationIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
-                            <a href="https://en.visitturku.fi/" target="blank">Turku, Finland</a>
-                        </li>
-                        <li class="flex">
-                            <IconsEmailIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
-                            <a href="mailto:f.botha@outlook.com">f.botha@outlook.com</a>
-                        </li>
-                        <li class="flex">
-                            <IconsLinkedInIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
-                            <a href="https://www.linkedin.com/in/francois-botha-4038b116b/" target="blank">LinkedIn</a></li>
-                        <li class="flex">
-                            <IconsWebsiteIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
-                            <a href="https://franbotha1990.github.io/digital-cv/" target="blank">Digital CV</a></li>
-                        <li class="flex">
-                            <IconsGitHubIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
-                            <a href="https://github.com/FranBotha1990" target="blank">GitHub</a>
-                        </li>
-                    </ul>
-                </section>
-                
-                <!-- Strengths section -->
-                <section class="mb-4">
-                    <h2 class="flex mb-2 border-b-2"><IconsTrophyIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-indigodye"/>Strengths</h2>
-                    <ul class="flex flex-wrap gap-0.5 justify-center">
-                        <li v-for="strength in strengths" key="strength" class="strengthItems">{{ strength }}</li>
-                    </ul>
-                </section>
-                
-                <!-- Major skills section -->
-                <section class="mb-4">
-                    <h2 class="flex mb-2 border-b-2"><IconsGearIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-midnightgreen"/>Technical Skills</h2>
-                    <ul class="flex flex-wrap gap-0.5 justify-center">
-                        <li v-for="skill in majorSkills" key="skill" class="majorSkillItems">{{ skill }}</li>
-                    </ul>
-                </section>
-
-                <!-- Minor skills section -->
-                <section class="mb-4">
-                    <h2 class="flex mb-2 border-b-2"><IconsTerminalIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-skobeloff"/>Additional Skills</h2>
-                    <ul class="flex flex-wrap gap-0.5 justify-center">
-                        <li v-for="skill in minorSkills" key="skill" class="minorSkillItems">{{ skill }}</li>
-                    </ul>
-                </section>
-            
-            </aside>
-
-            <!-- Right column -->
-            <section class="right-column-cnt">
-                
-                <!-- Insert summary component -->
-                <Summary></Summary>
-                
-                <!-- Work experience container -->
-                <div class="mb-4">
-                    <h2 class="flex mb-4 text-2xl"><IconsJobIcon class="[&>svg]:h-8 [&>svg]:w-8 pr-1 text-custcol-indigodye"/>Experience</h2>
-                    <section>
-                        <Job
-                            v-for="job in jobs" 
-                            :key="job.title" 
-                            :title="job.title" 
-                            :company="job.company" 
-                            :dateRange="job.dateRange" 
-                            :location="job.location" 
-                            :companyDescription="job.companyDescription" 
-                            :responsibilities="job.responsibilities"
-                        />
+                    <!-- Contact information  -->
+                    <section class="mb-4">
+                        <h1 class="pb-2">Francois Botha</h1>
+                        <h2 class="pb-2">Head of Business Information</h2>
+                        <ul>
+                            <li class="flex">
+                                <IconsLocationIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
+                                <a href="https://en.visitturku.fi/" target="blank">Turku, Finland</a>
+                            </li>
+                            <li class="flex">
+                                <IconsEmailIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
+                                <a href="mailto:f.botha@outlook.com">f.botha@outlook.com</a>
+                            </li>
+                            <li class="flex">
+                                <IconsLinkedInIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
+                                <a href="https://www.linkedin.com/in/francois-botha-4038b116b/" target="blank">LinkedIn</a></li>
+                            <li class="flex">
+                                <IconsWebsiteIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
+                                <a href="https://franbotha1990.github.io/digital-cv/" target="blank">Digital CV</a></li>
+                            <li class="flex">
+                                <IconsGitHubIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
+                                <a href="https://github.com/FranBotha1990" target="blank">GitHub</a>
+                            </li>
+                        </ul>
                     </section>
-                </div>
+                    
+                    <!-- Strengths section -->
+                    <section class="mb-4">
+                        <h2 class="flex mb-2 border-b-2"><IconsTrophyIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-indigodye"/>Strengths</h2>
+                        <ul class="flex flex-wrap gap-0.5 justify-center">
+                            <li v-for="strength in strengths" key="strength" class="strengthItems">{{ strength }}</li>
+                        </ul>
+                    </section>
+                    
+                    <!-- Major skills section -->
+                    <section class="mb-4">
+                        <h2 class="flex mb-2 border-b-2"><IconsGearIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-midnightgreen"/>Technical Skills</h2>
+                        <ul class="flex flex-wrap gap-0.5 justify-center">
+                            <li v-for="skill in majorSkills" key="skill" class="majorSkillItems">{{ skill }}</li>
+                        </ul>
+                    </section>
+
+                    <!-- Minor skills section -->
+                    <section class="mb-4">
+                        <h2 class="flex mb-2 border-b-2"><IconsTerminalIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-skobeloff"/>Additional Skills</h2>
+                        <ul class="flex flex-wrap gap-0.5 justify-center">
+                            <li v-for="skill in minorSkills" key="skill" class="minorSkillItems">{{ skill }}</li>
+                        </ul>
+                    </section>
                 
-                <!-- Education section -->
-                <section class="mb-4"></section>
-                
-                <!-- Certificates section -->
-                <section class="mb-4"></section>
+                </aside>
 
-            </section>
+                <!-- Right column -->
+                <section class="right-column-cnt">
+                    
+                    <!-- Insert summary component -->
+                    <Summary></Summary>
+                    
+                    <!-- Work experience container -->
+                    <div class="mb-4">
+                        <h2 class="flex mb-4 text-2xl"><IconsJobIcon class="[&>svg]:h-8 [&>svg]:w-8 pr-1 text-custcol-indigodye"/>Experience</h2>
+                        <section>
+                            <Job
+                                v-for="job in jobs" 
+                                :key="job.title" 
+                                :title="job.title" 
+                                :company="job.company" 
+                                :dateRange="job.dateRange" 
+                                :location="job.location" 
+                                :companyDescription="job.companyDescription" 
+                                :responsibilities="job.responsibilities"
+                            />
+                        </section>
+                    </div>
+                    
+                    <!-- Education section -->
+                    <section class="mb-4"></section>
+                    
+                    <!-- Certificates section -->
+                    <section class="mb-4"></section>
 
-        </div>
+                </section>
 
-        <Footer />
+            </div>
 
-    </article>
+            <Footer></Footer>
+
+        </article>
+    </div>
+    
 </template>
 
 <script setup>
     
-    // Get current year
-    const currentYear = ref(new Date().getFullYear())
-
     // Strengths list
     const strengths = ref([
         'Good Communicator', 'Strategic Leader', 'Analytical', 'Insightful', 'Resilient', 'Innovative', 'Self-Aware', 'Creative', 'Adaptable', 'Confident', 'Effective Listening'

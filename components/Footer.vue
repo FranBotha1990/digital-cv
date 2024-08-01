@@ -11,6 +11,9 @@
 
 <script setup>
 
+    // Get current year
+    const currentYear = ref(new Date().getFullYear())
+
 </script>
 
 <style>
