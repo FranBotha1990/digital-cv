@@ -7,18 +7,10 @@
             <!-- Buttons -->
             <nav>
                 <div class="container flex flex-wrap mx-auto max-w-md sm:justify-between justify-center pb-4">
-                    <button class="buttons">
-                        Home
-                    </button>
-                    <button class="buttons">
-                        Profile
-                    </button>
-                    <button class="buttons">
-                        Education
-                    </button>
-                    <button class="buttons">
-                        Projects
-                    </button>
+                    <NuxtLink to="/" class="buttons" active-class=" active-button">Home</NuxtLink>
+                    <NuxtLink to="/profile" class="buttons" active-class=" active-button">Profile</NuxtLink>
+                    <NuxtLink to="/education" class="buttons" active-class=" active-button">Education</NuxtLink>
+                    <NuxtLink to="/projects" class="buttons" active-class=" active-button">Projects</NuxtLink>
                 </div>
             </nav>
 

@@ -25,6 +25,10 @@ export default defineNuxtConfig({
     },
     baseURL: '/digital-cv/',
     buildAssetsDir: 'assets',
+    pageTransition: {
+      name: 'page', 
+      mode: 'out-in',
+    },
   },
   routeRules: {
     '/**': { ssr: false }
