@@ -163,3 +163,25 @@ h3 {
 .delay-800 {
     animation-delay: 5.5s;
 }
+
+.certificates {
+    @apply px-4 py-6 max-w-4xl mx-auto;
+}
+  
+.certificate-item {
+    @apply mb-6 p-4 border bg-white rounded-md shadow-xl;
+}
+  
+.certificate-item h2 {
+    @apply text-xl font-semibold text-custcol-indigodye;
+}
+  
+.image-container {
+    @apply mt-4
+}
+  
+.certificate-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #107e7d;
+}
