@@ -22,21 +22,21 @@
                             <h2 class="pb-2">Head of Business Information</h2>
                             <ul>
                                 <li class="flex">
-                                    <IconsLocationIcon class="pr-1"/>
+                                    <IconsLocationIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
                                     <a href="https://en.visitturku.fi/" target="blank">Turku, Finland</a>
                                 </li>
                                 <li class="flex">
-                                    <IconsEmailIcon class="pr-1"/>
+                                    <IconsEmailIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
                                     <a href="mailto:f.botha@outlook.com">f.botha@outlook.com</a>
                                 </li>
                                 <li class="flex">
-                                    <IconsLinkedInIcon class="pr-1"/>
+                                    <IconsLinkedInIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
                                     <a href="https://www.linkedin.com/in/francois-botha-4038b116b/" target="blank">LinkedIn</a></li>
                                 <li class="flex">
-                                    <IconsWebsiteIcon class="pr-1"/>
+                                    <IconsWebsiteIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
                                     <a href="https://franbotha1990.github.io/digital-cv/" target="blank">Digital CV</a></li>
                                 <li class="flex">
-                                    <IconsGitHubIcon class="pr-1"/>
+                                    <IconsGitHubIcon class="pr-1 [&>svg]:h-5 [&>svg]:w-5"/>
                                     <a href="https://github.com/FranBotha1990" target="blank">GitHub</a>
                                 </li>
                             </ul>
@@ -44,7 +44,7 @@
                         
                         <!-- Strengths section -->
                         <section class="mb-4">
-                            <h2 class="mb-2 border-b-2">Strengths</h2>
+                            <h2 class="flex mb-2 border-b-2"><IconsTrophyIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-indigodye"/>Strengths</h2>
                             <ul class="flex flex-wrap gap-0.5 justify-center">
                                 <li v-for="strength in strengths" key="strength" class="strengthItems">{{ strength }}</li>
                             </ul>
@@ -52,7 +52,7 @@
                         
                         <!-- Major skills section -->
                         <section class="mb-4">
-                            <h2 class="mb-2 border-b-2">Technical Skills</h2>
+                            <h2 class="flex mb-2 border-b-2"><IconsGearIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-midnightgreen"/>Technical Skills</h2>
                             <ul class="flex flex-wrap gap-0.5 justify-center">
                                 <li v-for="skill in majorSkills" key="skill" class="majorSkillItems">{{ skill }}</li>
                             </ul>
@@ -60,7 +60,7 @@
 
                         <!-- Minor skills section -->
                         <section class="mb-4">
-                            <h2 class="mb-2 border-b-2">Additional Skills</h2>
+                            <h2 class="flex mb-2 border-b-2"><IconsTerminalIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-skobeloff"/>Additional Skills</h2>
                             <ul class="flex flex-wrap gap-0.5 justify-center">
                                 <li v-for="skill in minorSkills" key="skill" class="minorSkillItems">{{ skill }}</li>
                             </ul>
@@ -76,7 +76,7 @@
                         
                         <!-- Work experience container -->
                         <div class="mb-4">
-                            <h2 class="mb-4 text-2xl">Experience</h2>
+                            <h2 class="flex mb-4 text-2xl"><IconsJobIcon class="[&>svg]:h-8 [&>svg]:w-8 pr-1 text-custcol-indigodye"/>Experience</h2>
                             <section>
                                 <Job
                                     v-for="job in jobs" 

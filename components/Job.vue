@@ -7,7 +7,7 @@
             <p>{{ company }}</p>
             <p>{{ dateRange }}</p>
         </div>
-        <p class="flex italic text-sm pt-1 pb-2 text-custcol-teal"><IconsLocationIcon />{{ location }}</p>
+        <p class="flex italic text-sm pt-1 pb-2 text-custcol-teal"><IconsLocationIcon class="[&>svg]:h-4 [&>svg]:w-4"/>{{ location }}</p>
         <p class="italic pb-2">{{ companyDescription }}</p>
         <ul class="list-disc pl-6">
             <li v-for="(responsibility, index) in responsibilities" key="index" v-html="formatResponsibility(responsibility)"></li>
