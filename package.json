@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d dist"
+    "deploy": "touch dist/.nojekyll && gh-pages -d dist"
   },
   "dependencies": {
     "nuxt": "^3.12.4",

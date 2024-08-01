@@ -24,6 +24,9 @@ export default defineNuxtConfig({
       ],
     },
     baseURL: '/digital-cv/',
-    buildAssetsDir: '/_nuxt/',
+    buildAssetsDir: 'assets',
+  },
+  routeRules: {
+    '/**': { ssr: false }
   },
 })
