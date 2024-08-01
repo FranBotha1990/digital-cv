@@ -15,13 +15,15 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'description', content: 'Virtual Profile & CV for Francois Botha'
-        }
+        },
       ],
       link: [
         {
           rel: 'stylesheet',
-        }
-      ]
-    }
-  }
+        },
+      ],
+    },
+    baseURL: '/digital-cv/',
+    buildAssetsDir: '/_nuxt/',
+  },
 })
