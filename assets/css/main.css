@@ -19,11 +19,11 @@
 }
 
 .left-column-cnt {
-    @apply w-full md:w-1/3 p-6 bg-gray-50
+    @apply w-full md:w-1/3 bg-gray-50 md:p-6 p-4
 }
 
 .right-column-cnt {
-    @apply w-full md:w-2/3 p-6
+    @apply w-full md:w-2/3 md:p-6 p-4
 }
 
 .profile-pic {
@@ -47,11 +47,15 @@ h3 {
 }
 
 .strengthItems {
-    @apply bg-custcol-indigodye text-white rounded-full px-2 py-1 text-sm
+    @apply bg-custcol-indigodye text-white rounded-full px-2 py-1 md:text-sm text-xs
 }
 
-.skillItems {
-    @apply bg-custcol-teal text-white rounded-full px-2 py-1 text-sm
+.majorSkillItems {
+    @apply bg-custcol-midnightgreen text-white rounded-full px-2 py-1 md:text-sm text-xs
+}
+
+.minorSkillItems {
+    @apply bg-custcol-skobeloff text-white rounded-full px-2 py-1 md:text-sm text-xs
 }
 
 .responsibility-title {

@@ -9,7 +9,7 @@
                 <div class="main-column-cnt">
 
                     <!-- Left column -->
-                    <aside class="left-column-cnt">
+                    <aside class="left-column-cnt sticky">
 
                         <!-- Profile picture -->
                         <header class="flex justify-center mb-6">
@@ -44,17 +44,25 @@
                         
                         <!-- Strengths section -->
                         <section class="mb-4">
-                            <h3 class="mb-2 border-b-2">Strengths</h3>
-                            <ul class="flex flex-wrap gap-1 justify-center">
+                            <h2 class="mb-2 border-b-2">Strengths</h2>
+                            <ul class="flex flex-wrap gap-0.5 justify-center">
                                 <li v-for="strength in strengths" key="strength" class="strengthItems">{{ strength }}</li>
                             </ul>
                         </section>
                         
-                        <!-- Skills section -->
+                        <!-- Major skills section -->
                         <section class="mb-4">
-                            <h3 class="mb-2 border-b-2">Skills</h3>
-                            <ul class="flex flex-wrap gap-1 justify-center">
-                                <li v-for="skill in skills" key="skill" class="skillItems">{{ skill }}</li>
+                            <h2 class="mb-2 border-b-2">Technical Skills</h2>
+                            <ul class="flex flex-wrap gap-0.5 justify-center">
+                                <li v-for="skill in majorSkills" key="skill" class="majorSkillItems">{{ skill }}</li>
+                            </ul>
+                        </section>
+
+                        <!-- Minor skills section -->
+                        <section class="mb-4">
+                            <h2 class="mb-2 border-b-2">Additional Skills</h2>
+                            <ul class="flex flex-wrap gap-0.5 justify-center">
+                                <li v-for="skill in minorSkills" key="skill" class="minorSkillItems">{{ skill }}</li>
                             </ul>
                         </section>
                     
@@ -112,12 +120,17 @@
 
     // Strengths list
     const strengths = ref([
-        'Good Communicator', 'Strategic Leader', 'Analytical', 'Insightful', 'Resilient', 'Innovative', 'Self-Aware', 'Creative', 'Adaptable', 'Confident'
+        'Good Communicator', 'Strategic Leader', 'Analytical', 'Insightful', 'Resilient', 'Innovative', 'Self-Aware', 'Creative', 'Adaptable', 'Confident', 'Effective Listening'
     ])
 
     // Skills list
-    const skills = ref([
-        'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'
+    const majorSkills = ref([
+        'IT Infrastructure Management', 'System Administration', 'Network Administration', 'Server Administration', 'System Migration', 'Microsoft Exchange', 'Microsoft 365', 'Security Management', 'Project Management', 'Backup Administration', 'System Analysis & Design', 'Computerized Systems Validation', 'GDPR', 'Data Protection', 'GxP | GCP, GLP, GCLP', 'Business Management'
+    ])
+
+    // Additional skills list
+    const minorSkills = ref([
+        'GitHub', 'HTML', 'CSS', 'JavaScript', 'Python', 'C#', 'NuxtJS', 
     ])
 
     // Pass job data as props to render content in section
@@ -132,7 +145,7 @@
             'Strategic IT Leadership: Developed and executed IT strategies to align with company objectives, driving digital transformation and operational excellence. Led initiatives that enhanced technology capabilities and fostered innovation.',
             'Team Leadership and Development: Provided guidance and mentorship to a team of IT professionals, fostering a collaborative and high-performance work environment, upholding culture of continuous improvement, supporting 150 users across 5 global sites.',
             'Technology Modernization: Consolidated and modernized IT operations, ensuring optimal performance, security, and compliance. Successfully managed the transition to advanced technologies and cloud services.',
-            'Cross-Functional Collaboration: Partnered with Product Management and Sales to ensure IT infrastructure supported product development and business growth. Facilitated alignment across departments to drive strategic objectives.',
+            'Cross-Functional Collaboration: Partnered with various departments to ensure IT infrastructure supported product development and business growth. Facilitated alignment across departments to drive strategic objectives.',
             'Performance Metrics: Set and monitored KPIs related to IT performance, achieving a 12-18% reduction in operational costs through process improvements.',
             'Budget Management: Planned and managed IT budgets and resource allocation, implementing cost-saving measures while maintaining high service standards.'
             ]

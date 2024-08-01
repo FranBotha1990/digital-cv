@@ -16,7 +16,7 @@ module.exports = {
         'custcol-teal': '#107e7d',
         'custcol-pennred': '#95190c',
         'custcol-midnightgreen': '#19535f',
-        'custcol-skobeloff': '0b7a75',
+        'custcol-skobeloff': '#209999',
       },
       // Create custom background with gradient
       backgroundImage: theme => ({
