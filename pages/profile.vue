@@ -136,8 +136,10 @@
             'Team Leadership and Development: Provided guidance and mentorship to a team of IT professionals, fostering a collaborative and high-performance work environment, upholding culture of continuous improvement, supporting 150 users across 5 global sites.',
             'Technology Modernization: Consolidated and modernized IT operations, ensuring optimal performance, security, and compliance. Successfully managed the transition to advanced technologies and cloud services.',
             'Cross-Functional Collaboration: Partnered with various departments to ensure IT infrastructure supported product development and business growth. Facilitated alignment across departments to drive strategic objectives.',
+            'Enterprise Systems Management & Integration: Managed critical databases supporting ERP and information managment software, ensuring seamless integration with core business processes.',
             'Performance Metrics: Set and monitored KPIs related to IT performance, achieving a 12-18% reduction in operational costs through process improvements.',
-            'Budget Management: Planned and managed IT budgets and resource allocation, implementing cost-saving measures while maintaining high service standards.'
+            'Budget Management: Planned and managed IT budgets and resource allocation, implementing cost-saving measures while maintaining high service standards.',
+            'AWARD: Certificate for Outstanding Contribution - In acknowledgement for your excellent contribution to Synexa, for displaying initiative and excellence in improving systems, procedures or practices. You have developed and implemented creative approcahes to work practices and that added an edge that was otherwise absent. Thank you for being a great team player. Your efforts make our team stronger.'
             ]
         },
         {
@@ -152,8 +154,7 @@
             'Team Development: Led and mentored IT professionals, fostering innovation and continuous improvement. Standardized hardware and provided comprehensive support for 65-75 users across all locations.',
             'Infrastructure Management: Administered LAN/WAN networks and Microsoft Server environments (2008-2016), ensuring seamless connectivity and adherence to organizational standards.',
             'Security & System Administration: Implemented robust security protocols and managed Active Directory, DHCP, DNS, and Group Policy to maintain a secure, stable IT ecosystem.',
-            'Hardware Management: Oversaw hardware management, including installation, upgrades, replacements, and roll-outs, focusing on eliminating setbacks and improving productivity.',
-            'Enterprise Systems Management & Integration: Managed critical databases supporting Sage and LIMS software, ensuring seamless integration with core business processes.'
+            'Hardware Management: Oversaw hardware management, including installation, upgrades, replacements, and roll-outs, focusing on eliminating setbacks and improving productivity.'
             ]
         },
         {

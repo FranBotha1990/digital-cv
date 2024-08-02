@@ -16,7 +16,7 @@
 				<p class="flex pb-2 text-sm text-custcol-indigodye"><IconsDateIcon class="[&>svg]:h-4 [&>svg]:w-4 pr-1"/>Designed in 2023</p>
 				<p class="pb-2">Traffic Management DBMS with ERD and functional database with test data.</p>
 				<section class="flex justify-center items-center">
-					<h2><a href="https://github.com/FranBotha1990/CMPG223_POS" class="flex" target="blank"><IconsGitHubIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-indigodye"/>GitHub Repository</a></h2>
+					<h2><a href="https://github.com/ArminPretorius/CMPG321-Group5-Project" class="flex" target="blank"><IconsGitHubIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-indigodye"/>GitHub Repository</a></h2>
 				</section>
 			</div>
 		</article>
