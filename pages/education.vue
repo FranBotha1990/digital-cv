@@ -7,13 +7,37 @@
 		</h1>
 
 		<div class="education-cnt">
-			<h2 class="pb-2">University</h2>
-			<p class="pb-1">Degree</p>
-			<p class="pb-1">Date</p>
+			<h2 class="pb-2 text-custcol-indigodye">North-West University</h2>
+			<p class="pb-1 text-sm italic">Bachelor of Science in Information Technology</p>
+			<p class="flex pb-2 text-sm text-custcol-indigodye"><IconsDateIcon class="[&>svg]:h-4 [&>svg]:w-4 pr-1"/>2021 - 2024 (In Progress, Final Semester)</p>
+			<section class="mb-4">
+				<h2 class="flex mb-2 border-b-2"><IconsTrophyIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-indigodye"/>Skills</h2>
+				<ul class="flex flex-wrap gap-0.5 justify-center">
+					<li v-for="skill in nwuSkills" key="skill" class="strengthItems">{{ skill }}</li>
+				</ul>
+			</section>
+		</div>
+
+		<div class="education-cnt">
+			<h2 class="pb-2 text-custcol-midnightgreen">North-West University</h2>
+			<p class="pb-1 text-sm italic">University Prepatory Programme: Bachelor of Science in Information Technology</p>
+			<p class="flex pb-2 text-sm text-custcol-midnightgreen"><IconsDateIcon class="[&>svg]:h-4 [&>svg]:w-4 pr-1"/>2020</p>
 			<section class="mb-4">
 				<h2 class="flex mb-2 border-b-2"><IconsTrophyIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-midnightgreen"/>Skills</h2>
 				<ul class="flex flex-wrap gap-0.5 justify-center">
-					<li v-for="skill in skills" key="skill" class="majorSkillItems">{{ skill }}</li>
+					<li v-for="skill in nwuPrepSkills" key="skill" class="majorSkillItems">{{ skill }}</li>
+				</ul>
+			</section>
+		</div>
+
+		<div class="education-cnt">
+			<h2 class="pb-2 text-custcol-skobeloff">CTI Education Group</h2>
+			<p class="pb-1 text-sm italic">Information Systems Engineering</p>
+			<p class="flex pb-2 text-sm text-custcol-skobeloff"><IconsDateIcon class="[&>svg]:h-4 [&>svg]:w-4 pr-1"/>2009</p>
+			<section class="mb-4">
+				<h2 class="flex mb-2 border-b-2"><IconsTrophyIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-skobeloff"/>Skills</h2>
+				<ul class="flex flex-wrap gap-0.5 justify-center">
+					<li v-for="skill in ctiSkills" key="skill" class="minorSkillItems">{{ skill }}</li>
 				</ul>
 			</section>
 		</div>
@@ -115,7 +139,7 @@
 			</div>
 
 			<div class="certificate-item">
-			<h2>Computerised Systems Validation to meet Quality System Requirements</h2>
+			<h2>Computerized Systems Validation to meet Quality System Requirements</h2>
 			<p>Quality First Academy</p>
 			<p>July 2019</p>
 			<div class="image-container">
@@ -156,9 +180,19 @@
 
 <script setup>
 
-	// Skills list
-    const skills = ref([
-        'One', 'Two', 'Three', 'Four', 'Five', 'One', 'Two', 'Three', 'Four', 'Five'
+	// NWU skills list
+    const nwuSkills = ref([
+        'Computer Science', 'Strategic Thinking', 'Financial Accounting', 'Business Management', 'Structure Programming', 'Critical Thinking', 'User Interface Programming', 'Descriptive Statistics', 'C++', 'C#', 'Python', 'HTML', 'CSS', 'Java', 'Problem Solving', 'Object-Oriented Programming', 'Systems Analysis & Design', 'Information Security', 'Networks', 'Artificial Intelligence', 'In Progress: Operating Systems', 'In Progress: IT Developments'
+    ])
+
+	// NWU skills list
+    const nwuPrepSkills = ref([
+        'Financial Accounting', 'Strategic Reading', 'Academic Literacy Development', 'Critical Thinking', 'End-User Computing', 'Mathematical Concepts'
+    ])
+
+	// CTI skills list
+    const ctiSkills = ref([
+        'Computer Literacy', 'Processing & Logic Concepts', 'Program Design', 'Software Engineering', 'Relational Database Modeling & Design'
     ])
 
 </script>

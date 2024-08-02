@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 .screen-cnt {
-    @apply min-h-screen bg-cust-gradient p-4 sm:px-6 lg:px-8 relative overflow-hidden;
+    @apply min-h-screen bg-cust-gradient p-4 sm:px-6 lg:px-8 relative overflow-hidden
 }
 
 .overlay-cnt {
-    @apply absolute inset-0 pointer-events-none;
+    @apply absolute inset-0 pointer-events-none
 }
 
 .overlay-image {
-    @apply fixed inset-0 bg-[url('/assets/img/overlay.png')] bg-no-repeat bg-center bg-cover opacity-10;
+    @apply fixed inset-0 bg-[url('/assets/img/overlay.png')] bg-no-repeat bg-center bg-cover opacity-10
 }
 
 .content-cnt {
-    @apply max-w-7xl mx-auto relative z-10;
+    @apply max-w-7xl mx-auto relative z-10
 }
 
 .cv-cnt {
@@ -165,11 +165,11 @@ h3 {
 }
 
 .certificates {
-    @apply px-4 py-6 md:max-w-7xl max-w-4xl mx-auto;
+    @apply px-4 py-6 md:max-w-7xl max-w-4xl mx-auto
 }
   
 .certificate-item {
-    @apply p-4 border bg-white rounded-md shadow-xl max-w-sm;
+    @apply p-4 border bg-white rounded-md shadow-xl max-w-sm
 }
 
 .certificates h1 {
@@ -177,19 +177,19 @@ h3 {
 }
   
 .certificate-item h2 {
-    @apply text-xl font-semibold text-custcol-indigodye;
+    @apply text-xl font-semibold text-custcol-indigodye
 }
   
 .image-container {
-    @apply mt-4;
+    @apply mt-4 flex
 }
   
 .certificate-image {
     max-width: 100%;
-    height: auto;
+    max-height: auto;
     border: 1px solid #107e7d;
 }
 
 .education-cnt {
-    @apply bg-white rounded-md max-w-xl mb-4 p-4 mx-auto justify-center text-left
+    @apply bg-white rounded-md md:max-w-xl max-w-sm mb-4 p-4 mx-auto justify-center text-left
 }
