@@ -23,7 +23,7 @@
 
 			<div class="education-cnt">
 				<h2 class="pb-2 text-custcol-midnightgreen">North-West University</h2>
-				<p class="pb-1 text-sm italic">University Prepatory Programme: Bachelor of Science in Information Technology</p>
+				<p class="pb-1 text-sm italic">University Preparatory Programme: Bachelor of Science in Information Technology</p>
 				<p class="flex pb-2 text-sm text-custcol-midnightgreen"><IconsDateIcon class="[&>svg]:h-4 [&>svg]:w-4 pr-1"/>2020</p>
 				<section class="mb-4">
 					<h2 class="flex mb-2 border-b-2"><IconsTrophyIcon  class="pr-1 [&>svg]:h-7 [&>svg]:w-6 text-custcol-midnightgreen"/>Skills</h2>
