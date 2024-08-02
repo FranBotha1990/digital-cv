@@ -2,7 +2,7 @@
 
 Digital CV for Francois Botha
 
-# Design Documentation
+# System Documentation
 ## Project Overview
 I built this web application project using NuxtJS and Tailwind CSS. NuxtJS provides the structure and framework for building a robust VueJS application, while TailwindCSS offers a utility-first approach to styling assisting in development and efficiency.
 
@@ -47,7 +47,7 @@ The integration of NuxtJS and Tailwind CSS is straightforward and involves the f
 ## Conclusion
 By leveraging the powerful combination of NuxtJS and Tailwind CSS, the project achieves a high level of performance, maintainability, and scalability. NuxtJS provides the robust structure and features needed for modern web applications, while Tailwind CSS allows for efficient and responsive design with a utility-first approach. This synergy enables rapid development and a high-quality user experience.
 
-# Design
+# Design Documentation
 
 Explain the design of the web application.
 
